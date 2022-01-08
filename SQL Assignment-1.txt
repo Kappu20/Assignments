@@ -1,0 +1,40 @@
+SQL Assignment 1
+
+1.What is a relational database management system (RDBMS)? What are the advantages of a database management system over a file system?
+RDBMS system is used for create,retrive,update & delete operations in the relational database .
+Advantage of DBMS: 
+a)Data storage capacity,life,accuracy,readablity high.
+b)Retriving insights much easier.
+c)Can acess more then 1 member same time.
+
+2.In a database management system, explain the ACID properties.
+A-Assertion --> For updating(modification in values,datatype,rename) the data in the database 
+C-Create--> For creating schema
+I-Insert--> For populating the data 
+D-Delete-->For deleting the data
+
+3.Explain the concept of normalization
+To convert complex table into simple.
+
+
+4.Explain the many types of query languages used in relational databases. DQL, DML, DCL, and DDL are some examples.
+a)DDL create,Alter,drop
+b)DQL select 
+C)DML Insert,update,delete
+d)DCL Grant revoke
+
+5.What is the difference between the main key and a composite key? Give instances of how primary key and composite are used.
+Primary key --> Table column which have unique & not null values .
+Composite key --> Combination of multiple coloumn.
+
+6.Create a table with a primary key, a column default value, and a column unique constraint in SQL.
+
+Create table student
+(
+student_id int not null,
+name varchar(20),
+city varchar(20),
+marks int default 20,
+standard varchar(10) unique,
+Primary_key(student_id)
+)
